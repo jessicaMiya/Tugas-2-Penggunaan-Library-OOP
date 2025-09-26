@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0a1a2f;   /* navy*/
+    padding: 20px;
+}
+
+
+h2 {
+    text-align: center;
+    color:  #ffffff;
+}
+
+.form-container {
+    width: 90%;          /* mengikuti lebar layar */
+    max-width: 800px;    /* tapi dibatasi max 800px */
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== Aturan FINAL untuk radio & checkbox ===== */
+.radio-group,
+.checkbox-group {
+    display: flex !important;       /* paksa flex horizontal */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: inline-flex !important; /* input + teks dalam satu baris */
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    white-space: nowrap;             /* biar teks tidak pindah ke bawah */
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    width: auto !important;          /* override width:100% */
+    margin: 0;
+}
+
